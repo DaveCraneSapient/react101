@@ -1,18 +1,15 @@
-import React, { useContext } from 'react';
-import { store } from '../store';
+import React from 'react';
 import Inner from './inner';
+import Sidebar from './Sidebar';
 
 function Outer({ title }) {
 
-    const { state, dispatch } = useContext(store);
-    const showSidebar = state.showSidebar;
-
-    console.log("render outer", state);
+    console.log("render outer");
 
     return (<div>
         <h1>{title}</h1>
         <Inner/>
-        { showSidebar && <p>sidebar</p> }
+        <Sidebar/>
     </div>);
 }
 
