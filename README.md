@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker Image
+
+Build: `docker build -t react101:latest .`
+
+Run: `docker run -d -p 8101:80 react101:latest`
+
+and visit `http://localhost:8101`
+
 ## Available Scripts
 
 In the project directory, you can run:
