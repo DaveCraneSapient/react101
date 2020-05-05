@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { store } from '../store';
+import config from '../config/config';
 
 function SidebarButton(){
 
@@ -13,7 +14,7 @@ function SidebarButton(){
     }
 
     return (<div>
-        <button onClick={toggleSidebar}>click me</button>
+        <button onClick={toggleSidebar}>{ config.buttonText }</button>
     </div>);
 }
 

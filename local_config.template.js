@@ -1,0 +1,1 @@
+window.localConfig = __APP_CONFIG_JSON__;

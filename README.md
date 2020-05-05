@@ -2,11 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Docker Image
 
-Build: `docker build -t react101:latest .`
+Build: `yarn build && docker build -t react101:latest .`
 
 Run: `docker run -d -p 8101:80 react101:latest`
 
 and visit `http://localhost:8101`
+
+## Overrides
+
+Runtime: `REACT_APP_CONFIG="{ \"sidebarText\": \"el sidebar\" }" yarn start`
+
+Deploy time (docker): `docker run -d -p 8101:80 -e APP_CONFIG_JSON="{ \"sidebarText\": \"el sidebar\" }" react101:latest`
 
 ## Available Scripts
 
