@@ -10,7 +10,7 @@ function Sidebar({ title }) {
     console.log("render sidebar", state);
 
     return (<>
-        { showSidebar && <p>{ config.sidebarText }</p> }
+        { showSidebar && <p>{ config.labels.sidebar }</p> }
         </>);
 }
 

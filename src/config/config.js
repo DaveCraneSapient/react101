@@ -1,7 +1,11 @@
+import { merge } from 'lodash';
+
 const defaultConfig = {
-  sidebarText: "sidebar",
-  buttonText: "click me",
-  apiHost: "http://localhost:3000/api"
+    labels: {
+        sidebar: "sidebar",
+        button: "click me"
+    },
+    apiHost: "http://localhost:3000/api"
 };
 
 function overrideStr(jsonStr) {
@@ -17,7 +21,7 @@ function overrideStr(jsonStr) {
 function overrideVals(obj) {
     obj = obj || {}
     console.log("override", defaultConfig, obj)
-    Object.assign(defaultConfig, obj);
+    merge(defaultConfig, obj);
 }
 
 //dev mode environment variables for local dev

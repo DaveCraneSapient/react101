@@ -14,7 +14,7 @@ function SidebarButton(){
     }
 
     return (<div>
-        <button onClick={toggleSidebar}>{ config.buttonText }</button>
+        <button onClick={toggleSidebar}>{ config.labels.button }</button>
     </div>);
 }
 
